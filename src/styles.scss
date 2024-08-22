@@ -1,0 +1,76 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.h1 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 25vh;
+  color: white;
+  text-shadow: 1px -1px black;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url(https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-jplenio-1423600.jpg&fm=jpg);
+  // background-image: url('las.jpg');
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  margin-top: -10em;
+  width: 40vh;
+  padding: 1em;
+  background-color: white;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
